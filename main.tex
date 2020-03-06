@@ -1,0 +1,94 @@
+\documentclass{kupaper}
+\usepackage{jtygm}%%%%%%%%%%%%%%%%%Font Warning対策%%%%%
+\usepackage{float}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{multirow}
+
+% プリアンブルに追加する
+
+\includeonly{0,1,2,3,4,5,6,7,thanks}
+
+\begin{document}
+
+
+
+%序章
+\include{0}
+
+\Maketitle
+%\listoftables
+%\listobfigures
+
+%\setcounter{chapter}{20}
+
+% 目次  (LaTeX の処理を少くする目的で，最後に書いています)
+\pagenumbering{roman}
+\setcounter{page}{1}
+\tableofcontents
+
+\include{1}
+
+
+
+\include{2}
+
+\include{3}
+
+\include{4}
+
+
+\include{5}
+
+\include{6}
+
+\include{7}
+
+
+%謝辞
+\include{thanks}
+
+
+% 参考文献
+%\include{cite}
+\bibliographystyle{junsrt}
+\bibliography{ref}
+
+
+%\include{huroku}
+
+
+
+
+\end{document}
+
+% Local Variables:
+% TeX-master: t
+% mode: yatex
+% End:
+
+% \documentclass[dvipdfmx,autodetect-engine]{jsarticle}
+% \usepackage{tikz}
+
+% \title{サンプル文書}
+% \author{著者}
+
+% \begin{document}
+% \maketitle
+
+% \begin{abstract}
+% 日本語を用いた文書を作成します。    
+% \end{abstract}
+
+% \section{はじめに}
+
+% TikZ図版もテストします。
+
+% \begin{center}
+% \begin{tikzpicture}
+% \node[draw,fill=red!20!white,circle] (S) at (0,0) {はじめ};
+% \node[draw,fill=blue!20!white,circle] (G) at (2,2) {おわり};
+% \draw[very thick,->] (S) -- (G);
+% \end{tikzpicture}
+% \end{center}
+
+% \end{document}
